@@ -16,7 +16,7 @@ WriteMakefile(
 
     BUILD_REQUIRES => {'Test::More' => '0.88'},
     PREREQ_PM      => {
-        'Mojolicious'     => '1.22',
+        'Mojolicious'     => '2.80',
         'Protocol::Redis' => '1.0',
         'Encode'          => 0,
     },

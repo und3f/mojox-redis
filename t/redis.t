@@ -140,7 +140,7 @@ sub check4 {
     $curr_stream->once(
         read => sub {
             my ($stream, $chunk) = @_;
-            Mojo::IOLoop->drop($server);
+            Mojo::IOLoop->remove($server);
        }
     );
 

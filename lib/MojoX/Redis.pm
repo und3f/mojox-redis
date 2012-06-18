@@ -76,7 +76,7 @@ sub DESTROY {
   return unless my $loop = $self->ioloop;
 
   # Cleanup connection
-  $loop->drop($self->{_connection})
+  $loop->remove($self->{_connection})
     if $self->{_connection};
 }
 
@@ -85,7 +85,7 @@ sub connect {
 
   # drop old connection
   if ($self->connected) {
-    $self->ioloop->drop($self->{_connection});
+    $self->ioloop->remove($self->{_connection});
   }
 
   $self->server =~ m{^([^:]+)(:(\d+))?};
@@ -135,7 +135,7 @@ sub connect {
           $self->_inform_queue;
 
           $self->on_error->($self);
-          $self->ioloop->drop($self->{_connection});
+          $self->ioloop->remove($self->{_connection});
         }
       );
 
