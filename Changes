@@ -1,5 +1,8 @@
 This file documents the revision history for Perl extension MojoX::Redis
 
+0.84 2012-06-18 00:00:00
+         - Updated to work with latest IOLoop API (marcusramberg)
+
 0.83 2011-12-11 00:00:00
          - Added info about Protocol::Redis::XS
          - Fixed to work with latest Mojolicious
