@@ -1,6 +1,7 @@
 =head1 NAME
 
-MojoX::Redis - asynchronous Redis client for L<Mojolicious>.
+MojoX::Redis - asynchronous Redis client for L<Mojolicious>. (Obsoleted by
+L<Mojo::Redis>)
 
 =head1 SYNOPSIS
 
@@ -178,7 +179,7 @@ Starts IOLoop. Shortcut for $redis->ioloop->start;
 
 =head1 SEE ALSO
 
-L<Protocol::Redis>, L<Mojolicious>, L<Mojo::IOLoop>
+L<Protocol::Redis>, L<Mojolicious>, L<Mojo::IOLoop>, L<Mojo::Redis>
 
 =head1 SUPPORT
 

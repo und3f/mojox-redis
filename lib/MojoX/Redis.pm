@@ -283,7 +283,7 @@ __END__
 
 =head1 NAME
 
-MojoX::Redis - asynchronous Redis client for L <Mojolicious> . (Obsoleted by
+MojoX::Redis - asynchronous Redis client for L<Mojolicious>. (Obsoleted by
 L<Mojo::Redis>)
 
 =head1 SYNOPSIS
