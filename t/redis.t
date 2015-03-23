@@ -9,10 +9,11 @@ use warnings;
 use Test::More tests => 10;
 
 use Mojo::IOLoop;
+use Mojo::IOLoop::Server;
 
 use_ok 'MojoX::Redis';
 
-my $port = Mojo::IOLoop->generate_port;
+my $port = Mojo::IOLoop::Server->generate_port;
 
 
 my ($sbuffer1, $sbuffer2, $sbuffer3);
