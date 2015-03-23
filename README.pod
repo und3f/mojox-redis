@@ -1,7 +1,6 @@
 =head1 NAME
 
-MojoX::Redis - asynchronous Redis client for L<Mojolicious>. (Obsoleted by
-L<Mojo::Redis>)
+MojoX::Redis - asynchronous Redis client for L<Mojolicious>.
 
 =head1 SYNOPSIS
 
