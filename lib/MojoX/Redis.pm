@@ -105,6 +105,13 @@ sub connect {
         sub {
             my ($loop, $err, $stream) = @_;
 
+            if ($err) {
+                $self->error($err);
+                $self->_inform_queue;
+
+                $self->on_error->($self);
+                return;
+            }
 
             delete $self->{_connecting};
             $stream->timeout($self->timeout);
