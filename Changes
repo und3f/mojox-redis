@@ -1,5 +1,8 @@
 This file documents the revision history for Perl extension MojoX::Redis
 
+0.88 2015-03-24 00:00:00
+         - docs updated
+
 0.87 2015-03-23 00:00:00
          - fixed to work with latest Mojolicious
 
