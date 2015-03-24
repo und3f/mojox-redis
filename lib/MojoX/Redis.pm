@@ -3,7 +3,7 @@ package MojoX::Redis;
 use strict;
 use warnings;
 
-our $VERSION = 0.87;
+our $VERSION = 0.88;
 use base 'Mojo::Base';
 
 use Mojo::IOLoop;
@@ -468,27 +468,19 @@ Starts IOLoop. Shortcut for $redis->ioloop->start;
 
 =head1 SEE ALSO
 
-L<Protocol::Redis>, L<Mojolicious>, L<Mojo::IOLoop>, L<Mojo::Redis>
-
-=head1 SUPPORT
-
-=head2 IRC
-
-    #ru.pm on irc.perl.org
-    
-=head1 DEVELOPMENT
-
-=head2 Repository
-
-    https://github.com/und3f/mojox-redis
+L<Mojo::Redis2>, L<Protocol::Redis>
 
 =head1 AUTHOR
 
 Sergey Zasenko, C<undef@cpan.org>.
 
+=head1 CREDITS
+
+Marcus Ramberg (marcusramberg)
+
 =head1 COPYRIGHT AND LICENSE
 
-Copyright (C) 2010-2011, Sergey Zasenko
+Copyright (C) 2010-2015, Sergey Zasenko
 
 This program is free software, you can redistribute it and/or modify it under
 the terms of the Artistic License version 2.0.
