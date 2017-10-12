@@ -4,4 +4,3 @@
 .*\.bak$
 ^Makefile$
 ^\.git
-README.pod
